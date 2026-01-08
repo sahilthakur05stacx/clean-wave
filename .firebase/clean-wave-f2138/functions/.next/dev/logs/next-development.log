@@ -1,0 +1,41 @@
+[00:00:02.899] Server  LOG      ✓ Ready in 2.4s
+[00:00:09.676] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:22:03.066] Server  ERROR    ⨯ ./node_modules/next/dist/client/app-next-dev.js
+TypeError: (0 , _swc.getBindingsSync) is not a function
+[00:22:03.936] Browser ERROR   ./node_modules/next/dist/client/app-next-dev.js
+TypeError: (0 , _swc.getBindingsSync) is not a function
+[00:22:03.936] Browser ERROR   ./node_modules/next/dist/client/components/builtin/global-error.js
+TypeError: (0 , _swc.getBindingsSync) is not a function
+Import trace for requested module:
+./node_modules/next/dist/client/components/builtin/global-error.js
+[00:22:03.936] Browser ERROR   ./node_modules/next/dist/client/components/client-page.js
+TypeError: (0 , _swc.getBindingsSync) is not a function
+Import trace for requested module:
+./node_modules/next/dist/client/components/client-page.js
+[00:22:03.936] Browser ERROR   ./node_modules/next/dist/client/components/client-segment.js
+TypeError: (0 , _swc.getBindingsSync) is not a function
+Import trace for requested module:
+./node_modules/next/dist/client/components/client-segment.js
+[00:22:03.936] Browser ERROR   ./node_modules/next/dist/client/components/http-access-fallback/error-boundary.js
+TypeError: (0 , _swc.getBindingsSync) is not a function
+Import trace for requested module:
+./node_modules/next/dist/client/components/http-access-fallback/error-boundary.js
+[00:22:03.936] Browser ERROR   ./node_modules/next/dist/client/components/layout-router.js
+TypeError: (0 , _swc.getBindingsSync) is not a function
+Import trace for requested module:
+./node_modules/next/dist/client/components/layout-router.js
+[00:22:03.936] Browser ERROR   ./node_modules/next/dist/client/components/not-found.js
+TypeError: (0 , _swc.getBindingsSync) is not a function
+Import trace for requested module:
+./node_modules/next/dist/client/components/not-found.js
+./node_modules/next/dist/next-devtools/userspace/app/segment-explorer-node.js
+[00:22:03.936] Browser ERROR   ./node_modules/next/dist/client/components/render-from-template-context.js
+TypeError: (0 , _swc.getBindingsSync) is not a function
+Import trace for requested module:
+./node_modules/next/dist/client/components/render-from-template-context.js
+[00:22:03.936] Browser ERROR   ./node_modules/next/dist/shared/lib/image-external.js
+TypeError: (0 , _swc.getBindingsSync) is not a function
+Import trace for requested module:
+./node_modules/next/dist/shared/lib/image-external.js
+./node_modules/next/dist/api/image.js
+./src/components/Footer.tsx
