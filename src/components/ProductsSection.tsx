@@ -9,120 +9,122 @@ import "swiper/css/pagination";
 export default function ProductsSection() {
   return (
     <section
-      className="w-full py-8 md:py-12 relative"
+      className="w-full h-[750px] overflow-hidden"
       style={{
-        background: "linear-gradient(to bottom, #FFFFFF, #E0F6FF, #87CEEB)",
+        background: "linear-gradient(to top, #87CEEB, #E0F6FF, #FFFFFF)",
       }}
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Compact Header */}
-        <div className="text-center mb-6 md:mb-8">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-yellow-400 mb-2 drop-shadow-md">
-            Find the Best Product for You!
-          </h2>
-        </div>
+      {/* Dark Blue Box Container */}
+      <div className="bg-[#1e3a8a] mx-auto w-[95%] max-w-[95%]  rounded-lg px-6 py-16 my-8">
+        <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 text-center mb-12">
+          Find the Best product for you!
+        </h2>
 
-        {/* Compact Product Slider Container */}
-        <div className="bg-[#1e3a8a] rounded-2xl shadow-xl overflow-hidden border-2 border-yellow-400/30 max-w-5xl mx-auto">
-          <div className="p-4 md:p-6 lg:p-8">
-            <Swiper
-              modules={[Pagination, Autoplay]}
-              spaceBetween={20}
-              slidesPerView={1}
-              pagination={{
-                clickable: true,
-              }}
-              autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
-              }}
-              loop={true}
-              breakpoints={{
-                640: {
-                  slidesPerView: 1,
-                },
-                768: {
-                  slidesPerView: 1,
-                },
-              }}
-              className="products-swiper"
-            >
-              <SwiperSlide>
-                <div className="flex items-center justify-center h-[350px] md:h-[400px] lg:h-[450px]">
+        {/* Slider Container */}
+        <div className="relative">
+          <Swiper
+            modules={[Pagination, Autoplay]}
+            spaceBetween={24}
+            slidesPerView={1}
+            pagination={{
+              clickable: true,
+            }}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            loop={true}
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 16,
+              },
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 1,
+                spaceBetween: 24,
+              },
+            }}
+            className="products-swiper pb-16"
+          >
+            <SwiperSlide>
+              <div className="flex items-center justify-center h-full">
+                <div className="text-white text-center">
                   <Image
                     src="/product-slider-1.jpeg"
                     alt="Clean Wave liquid detergent product"
                     width={400}
-                    height={500}
-                    className="object-contain w-full h-full max-w-sm md:max-w-md lg:max-w-lg mx-auto drop-shadow-lg"
+                    height={400}
+                    style={{ width: "400px", height: "400px" }}
                     priority
+                    className="object-contain max-h-[600px]"
                   />
                 </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="flex items-center justify-center h-[350px] md:h-[400px] lg:h-[450px]">
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="flex items-center justify-center h-full">
+                <div className="text-white text-center">
                   <Image
                     src="/product-slider-2.jpeg"
                     alt="Clean Wave liquid detergent product"
                     width={400}
-                    height={500}
-                    className="object-contain w-full h-full max-w-sm md:max-w-md lg:max-w-lg mx-auto drop-shadow-lg"
+                    height={400}
+                    style={{ width: "400px", height: "400px" }}
                     priority
+                    className="object-contain max-h-[600px]"
                   />
                 </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="flex items-center justify-center h-[350px] md:h-[400px] lg:h-[450px]">
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="flex items-center justify-center h-full">
+                <div className="text-white text-center">
                   <Image
                     src="/product-slider-3.jpeg"
                     alt="Clean Wave liquid detergent product"
                     width={400}
-                    height={500}
-                    className="object-contain w-full h-full max-w-sm md:max-w-md lg:max-w-lg mx-auto drop-shadow-lg"
+                    height={400}
+                    style={{ width: "400px", height: "400px" }}
                     priority
+                    className="object-contain max-h-[600px]"
                   />
                 </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="flex items-center justify-center h-[350px] md:h-[400px] lg:h-[450px]">
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="flex items-center justify-center h-full">
+                <div className="text-white text-center">
                   <Image
                     src="/product-slider-4.jpeg"
                     alt="Clean Wave liquid detergent product"
                     width={400}
-                    height={500}
-                    className="object-contain w-full h-full max-w-sm md:max-w-md lg:max-w-lg mx-auto drop-shadow-lg"
+                    height={400}
+                    style={{ width: "400px", height: "400px" }}
                     priority
+                    className="object-contain max-h-[600px]"
                   />
                 </div>
-              </SwiperSlide>
-            </Swiper>
-          </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
+        <style jsx global>{`
+          .products-swiper .swiper-pagination {
+            bottom: 0 !important;
+          }
+          .products-swiper .swiper-pagination-bullet {
+            background-color: #facc15;
+            opacity: 0.6;
+          }
+          .products-swiper .swiper-pagination-bullet-active {
+            opacity: 1;
+          }
+        `}</style>
       </div>
-
-      <style jsx global>{`
-        .products-swiper {
-          width: 100%;
-        }
-        .products-swiper .swiper-pagination {
-          bottom: 10px !important;
-          position: relative;
-          margin-top: 10px;
-        }
-        .products-swiper .swiper-pagination-bullet {
-          background-color: #facc15;
-          opacity: 0.6;
-          width: 10px;
-          height: 10px;
-          margin: 0 5px;
-          transition: all 0.3s ease;
-        }
-        .products-swiper .swiper-pagination-bullet-active {
-          opacity: 1;
-          transform: scale(1.2);
-          background-color: #facc15;
-        }
-      `}</style>
     </section>
   );
 }
