@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 export default function ProductsSection() {
   return (
     <section
-      className="w-full h-[750px] overflow-hidden"
+      className="w-full h-[1050px] overflow-hidden"
       style={{
         background: "linear-gradient(to top, #87CEEB, #E0F6FF, #FFFFFF)",
       }}
@@ -17,7 +17,7 @@ export default function ProductsSection() {
       {/* Dark Blue Box Container */}
       <div className="bg-[#1e3a8a] mx-auto w-[95%] max-w-[95%]  rounded-lg px-6 py-16 my-8">
         <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 text-center mb-12">
-          Find the Best product for you!
+          {/* Find the Best product for you! */}
         </h2>
 
         {/* Slider Container */}
@@ -56,11 +56,12 @@ export default function ProductsSection() {
                   <Image
                     src="/product-slider-1.jpeg"
                     alt="Clean Wave liquid detergent product"
-                    width={400}
-                    height={400}
-                    style={{ width: "400px", height: "400px" }}
+                    width={0}
+                    height={0}
+                    unoptimized
                     priority
-                    className="object-contain max-h-[600px]"
+                    style={{ width: "auto", height: "auto" }}
+                    className="rounded-[20px]"
                   />
                 </div>
               </div>
@@ -71,11 +72,12 @@ export default function ProductsSection() {
                   <Image
                     src="/product-slider-2.jpeg"
                     alt="Clean Wave liquid detergent product"
-                    width={400}
-                    height={400}
-                    style={{ width: "400px", height: "400px" }}
+                    width={0}
+                    height={0}
+                    unoptimized
                     priority
-                    className="object-contain max-h-[600px]"
+                    style={{ width: "auto", height: "auto" }}
+                    className="rounded-[20px]"
                   />
                 </div>
               </div>
@@ -86,11 +88,12 @@ export default function ProductsSection() {
                   <Image
                     src="/product-slider-3.jpeg"
                     alt="Clean Wave liquid detergent product"
-                    width={400}
-                    height={400}
-                    style={{ width: "400px", height: "400px" }}
+                    width={0}
+                    height={0}
+                    unoptimized
                     priority
-                    className="object-contain max-h-[600px]"
+                    style={{ width: "auto", height: "auto" }}
+                    className="rounded-[20px]"
                   />
                 </div>
               </div>
@@ -101,11 +104,12 @@ export default function ProductsSection() {
                   <Image
                     src="/product-slider-4.jpeg"
                     alt="Clean Wave liquid detergent product"
-                    width={400}
-                    height={400}
-                    style={{ width: "400px", height: "400px" }}
+                    width={0}
+                    height={0}
+                    unoptimized
                     priority
-                    className="object-contain max-h-[600px]"
+                    style={{ width: "auto", height: "auto" }}
+                    className="rounded-[20px]"
                   />
                 </div>
               </div>
